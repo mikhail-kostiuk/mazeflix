@@ -5,7 +5,7 @@ jobs:
       - image: circleci/node:12
     working_directory: ~/project
     steps:
-      -checkout
+      - checkout
       - restore_cache:
           keys:
             - v1-npm-deps-{{ checksum "package-lock.json" }}
@@ -29,4 +29,3 @@ jobs:
       - run:
           name: Firebase Deploy
           command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --non-interactive
-  
