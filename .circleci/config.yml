@@ -2,7 +2,9 @@ version: 2
 jobs:
   deploy:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:12-browsers
+        environment:
+          CHROME_BIN: "/usr/bin/google-chrome"
     working_directory: ~/project
     steps:
       - checkout
