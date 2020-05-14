@@ -40,7 +40,7 @@ jobs:
           name: Build
           command: npm run build
   deploy:
-   docker:
+    docker:
       - image: circleci/node:12
     steps:
       - checkout
