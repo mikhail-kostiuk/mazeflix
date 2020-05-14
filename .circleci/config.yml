@@ -3,7 +3,7 @@ jobs:
   test:
     docker:
       - image: circleci/node:12
-    working_directory: ~/mazeflix
+    orking_directory: ~/project
     steps:
       - run:
           name: Test
@@ -23,7 +23,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:12
-    working_directory: ~/mazeflix
+    orking_directory: ~/project
     steps:
       - checkout
       - restore_cache:
