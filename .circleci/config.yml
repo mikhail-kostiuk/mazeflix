@@ -19,10 +19,10 @@ jobs:
             - ./node_modules
       - run:
           name: Test
-          command: npm run test -- --watch=false --progress=false --browsers=ChromeHeadlessCI
+          command: npm run test
       - run:
           name: Test e2e
-          command: npm run e2e -- --protractor-config=./e2e/protractor-ci.conf.js
+          command: npm run e2e
       - run:
           name: Build
           command: npm run build
