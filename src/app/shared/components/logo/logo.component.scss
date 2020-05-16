@@ -1,0 +1,15 @@
+@import "variables";
+
+.logo {
+  font-family: "Qanelas Soft", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  font-variant-ligatures: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &__link {
+    color: $color-white;
+    text-decoration: none;
+  }
+}
